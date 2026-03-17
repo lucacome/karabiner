@@ -643,7 +643,7 @@ __metadata:
   resolution: "karabiner@workspace:."
   dependencies:
     "@types/node": "npm:^18.19.130"
-    nodemon: "npm:^2.0.20"
+    nodemon: "npm:^2.0.22"
     prettier: "npm:^3.8.1"
     tsm: "npm:^2.3.0"
   languageName: unknown
@@ -804,9 +804,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:^2.0.20":
-  version: 2.0.20
-  resolution: "nodemon@npm:2.0.20"
+"nodemon@npm:^2.0.22":
+  version: 2.0.22
+  resolution: "nodemon@npm:2.0.22"
   dependencies:
     chokidar: "npm:^3.5.2"
     debug: "npm:^3.2.7"
@@ -820,7 +820,7 @@ __metadata:
     undefsafe: "npm:^2.0.5"
   bin:
     nodemon: bin/nodemon.js
-  checksum: 10c0/ac490585e976028bab441dc5149203b2a220b91d5e40f0698e3625a2da40c28c306b6f7b4e95e15b60ad1428231337161636de2eca665eb4a7ea2f73b4c3a096
+  checksum: 10c0/37e960b995b66e6d9e3b0e435ecc07a45200c4c566c4820a4deb6e7cc234b305e076a8ff0b4dc9c01ee690c663ae82a217d60c591dcbbcd4af1e3a7d0ad2b2c6
   languageName: node
   linkType: hard
 
