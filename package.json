@@ -7,7 +7,7 @@
   "devDependencies": {
     "@types/node": "^18.7.19",
     "nodemon": "^2.0.20",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.8",
     "tsm": "^2.3.0"
   },
   "scripts": {
