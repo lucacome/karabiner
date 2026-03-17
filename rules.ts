@@ -44,6 +44,10 @@ const rules: KarabinerRules[] = [
     spacebar: open(
       "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
     ),
+    // ctrl + a for tmux prefix
+    a: {
+      to: [{ key_code: "a", modifiers: ["left_control"] }],
+    },
     // b = "B"rowse
     b: {
       c: open("https://claude.ai"),
