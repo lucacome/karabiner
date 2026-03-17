@@ -1,6 +1,6 @@
 {
   "global": {
-    "show_in_menu_bar": false
+    "show_in_menu_bar": true
   },
   "profiles": [
     {
@@ -190,13 +190,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://twitter.com"
+                    "shell_command": "open https://claude.ai"
                   }
                 ],
-                "description": "Open https://twitter.com",
+                "description": "Open https://claude.ai",
                 "type": "basic",
                 "from": {
-                  "key_code": "t",
+                  "key_code": "c",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -214,61 +214,61 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://mxstbr.com/cal"
+                    "shell_command": "open https://github.com/notifications"
                   }
                 ],
-                "description": "Open https://mxstbr.com/cal",
+                "description": "Open https://github.com/notifications",
+                "type": "basic",
+                "from": {
+                  "key_code": "g",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_b",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open https://9to5mac.com/"
+                  }
+                ],
+                "description": "Open https://9to5mac.com/",
+                "type": "basic",
+                "from": {
+                  "key_code": "m",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_b",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open raycast://extensions/luolei/karakeep/createBookmark?List=Projects"
+                  }
+                ],
+                "description": "Open raycast://extensions/luolei/karakeep/createBookmark?List=Projects",
                 "type": "basic",
                 "from": {
                   "key_code": "p",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://news.ycombinator.com"
-                  }
-                ],
-                "description": "Open https://news.ycombinator.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "y",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open https://facebook.com"
-                  }
-                ],
-                "description": "Open https://facebook.com",
-                "type": "basic",
-                "from": {
-                  "key_code": "f",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -310,13 +310,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://hashnode.com/draft"
+                    "shell_command": "open https://www.youtube.com"
                   }
                 ],
-                "description": "Open https://hashnode.com/draft",
+                "description": "Open https://www.youtube.com",
                 "type": "basic",
                 "from": {
-                  "key_code": "h",
+                  "key_code": "y",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -1272,32 +1272,6 @@
                     "value": 1
                   }
                 ]
-              },
-              {
-                "to": [
-                  {
-                    "key_code": "spacebar",
-                    "modifiers": [
-                      "left_option"
-                    ]
-                  }
-                ],
-                "type": "basic",
-                "from": {
-                  "key_code": "v",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_s",
-                    "value": 1
-                  }
-                ]
               }
             ]
           },
@@ -1469,7 +1443,7 @@
               {
                 "to": [
                   {
-                    "key_code": "f",
+                    "key_code": "k",
                     "modifiers": [
                       "right_shift",
                       "right_command"
@@ -1523,7 +1497,7 @@
               {
                 "to": [
                   {
-                    "key_code": "d",
+                    "key_code": "l",
                     "modifiers": [
                       "right_shift",
                       "right_command"

@@ -163,7 +163,7 @@ const rules: KarabinerRules[] = [
       },
       // Magicmove via homerow.app
       m: {
-        to: [{ key_code: "f", modifiers: ["right_shift", "right_command"] }],
+        to: [{ key_code: "k", modifiers: ["right_shift", "right_command"] }],
         // TODO: Trigger Vim Easymotion when VSCode is focused
       },
       // Scroll mode via homerow.app
@@ -171,7 +171,7 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "j", modifiers: ["right_shift", "right_command"] }],
       },
       d: {
-        to: [{ key_code: "d", modifiers: ["right_shift", "right_command"] }],
+        to: [{ key_code: "l", modifiers: ["right_shift", "right_command"] }],
       },
       u: {
         to: [{ key_code: "page_down" }],
@@ -216,7 +216,7 @@ fs.writeFileSync(
   JSON.stringify(
     {
       global: {
-        show_in_menu_bar: false,
+        show_in_menu_bar: true,
       },
       profiles: [
         {
