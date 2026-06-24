@@ -8,6 +8,32 @@
       "complex_modifications": {
         "rules": [
           {
+            "description": "Fn -> Control (Built-in Keyboard)",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "fn"
+                },
+                "to": [
+                  {
+                    "key_code": "left_control"
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "device_if",
+                    "identifiers": [
+                      {
+                        "is_built_in_keyboard": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "description": "Hyper Key (⌃⌥⇧⌘)",
             "manipulators": [
               {
@@ -1305,10 +1331,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/tonka3000/homeassistant/lights?launchType=background"
+                    "shell_command": "open raycast://extensions/tonka3000/homeassistant/lights"
                   }
                 ],
-                "description": "Open raycast://extensions/tonka3000/homeassistant/lights?launchType=background",
+                "description": "Open raycast://extensions/tonka3000/homeassistant/lights",
                 "type": "basic",
                 "from": {
                   "key_code": "e",
@@ -1606,7 +1632,7 @@
                     "key_code": "l",
                     "modifiers": [
                       "right_shift",
-                      "right_command"
+                      "right_option"
                     ]
                   }
                 ],

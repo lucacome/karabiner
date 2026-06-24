@@ -3,6 +3,22 @@ import { KarabinerRules } from "./types";
 import { createHyperSubLayers, app, open, window, shell } from "./utils";
 
 const rules: KarabinerRules[] = [
+  {
+    description: "Fn -> Control (Built-in Keyboard)",
+    manipulators: [
+      {
+        type: "basic",
+        from: { key_code: "fn" },
+        to: [{ key_code: "left_control" }],
+        conditions: [
+          {
+            type: "device_if",
+            identifiers: [{ is_built_in_keyboard: true }],
+          },
+        ],
+      },
+    ],
+  },
   // Define the Hyper key itself
   {
     description: "Hyper Key (⌃⌥⇧⌘)",
@@ -42,7 +58,7 @@ const rules: KarabinerRules[] = [
   },
   ...createHyperSubLayers({
     spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
+      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo",
     ),
     // ctrl + a for tmux prefix
     a: {
@@ -53,7 +69,9 @@ const rules: KarabinerRules[] = [
       c: open("https://claude.ai"),
       g: open("https://github.com/notifications"),
       m: open("https://9to5mac.com/"),
-      p: open("raycast://extensions/luolei/karakeep/createBookmark?List=Projects"),
+      p: open(
+        "raycast://extensions/luolei/karakeep/createBookmark?List=Projects",
+      ),
       r: open("https://reddit.com"),
       y: open("https://www.youtube.com"),
     },
@@ -141,11 +159,11 @@ const rules: KarabinerRules[] = [
         ],
       },
       e: open(
-        `raycast://extensions/tonka3000/homeassistant/lights?launchType=background`
+        `raycast://extensions/tonka3000/homeassistant/lights`,
       ),
       // "D"o not disturb toggle
       d: open(
-        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
+        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`,
       ),
       c: open("raycast://extensions/raycast/system/open-camera"),
     },
@@ -175,7 +193,7 @@ const rules: KarabinerRules[] = [
         to: [{ key_code: "j", modifiers: ["right_shift", "right_command"] }],
       },
       d: {
-        to: [{ key_code: "l", modifiers: ["right_shift", "right_command"] }],
+        to: [{ key_code: "d", modifiers: ["right_shift", "right_option"] }],
       },
       u: {
         to: [{ key_code: "page_down" }],
@@ -206,10 +224,10 @@ const rules: KarabinerRules[] = [
       //   "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
       // ),
       e: open(
-        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
       ),
       h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
+        "raycast://extensions/raycast/clipboard-history/clipboard-history",
       ),
     },
   }),
@@ -232,6 +250,6 @@ fs.writeFileSync(
       ],
     },
     null,
-    2
-  )
+    2,
+  ),
 );
